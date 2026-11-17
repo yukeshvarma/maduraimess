@@ -10,6 +10,7 @@ Open index.html in a browser. The menu is available at menu.html; use the Print 
 
 - Menu items and prices are the values supplied by Madurai Mess; prices are shown in Indian rupees.
 - Food photographs are illustrative, generated menu visuals.
+- The Meenakshi Amman Temple illustration is original artwork; the four history notes link to Madurai District's official temple page.
 - The logo artwork and Managing Director portrait were supplied for this website.
 
 ## Publish with GitHub Pages

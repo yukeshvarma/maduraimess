@@ -15,6 +15,25 @@
 @media(max-width:420px){.topline-right{letter-spacing:.08em;gap:6px}.brand-copy strong{font-size:10px}.header-call{margin-right:10px}.button{padding:0 13px;gap:13px;font-size:10px}.hero-actions{gap:9px}.dish-title-line{display:block}.dish-title-line span{display:block;margin-top:3px}.visit-details{grid-template-columns:1fr}.menu-address{flex-direction:column}}
 @media print{body.menu-page{background:#fff;color:#29231c}.topline,.site-header,.menu-top-actions,.menu-foot-links,.menu-footer{display:none!important}.menu-main{max-width:none;padding:0}.menu-board{padding:30px 8% 24px;border:0;box-shadow:none;print-color-adjust:exact;-webkit-print-color-adjust:exact}.menu-board:before{inset:7px}.menu-item,.menu-category{break-inside:avoid}.menu-category{margin-bottom:17px}}
 
+/* Madurai landmark story */
+.temple-story{display:grid;grid-template-columns:1.03fr .97fr;align-items:center;gap:7.2vw;padding:104px 10.8vw;background:#1b1915;border-top:1px solid rgba(243,233,215,.08)}
+.temple-figure{margin:0;min-width:0}
+.temple-figure img{display:block;width:100%;aspect-ratio:1.24;object-fit:cover;object-position:38% center;border:1px solid rgba(243,233,215,.12)}
+.temple-figure figcaption{display:flex;justify-content:space-between;gap:12px;margin:12px 2px 0;color:#a69b89;font-size:9px;line-height:1.6}
+.temple-figure figcaption span{flex:0 0 auto;color:#897f70;font-size:8px;letter-spacing:.08em;text-transform:uppercase}
+.temple-copy .eyebrow{margin-bottom:18px}
+.temple-copy h2{margin:0 0 19px;color:var(--cream);font:600 clamp(35px,4vw,52px)/1.1 var(--serif);letter-spacing:-.045em}
+.temple-copy h2 em{color:var(--orange);font-weight:500}
+.temple-intro{max-width:470px;margin:0;color:#bdb4a5;font-size:11px;line-height:1.85}
+.temple-history{max-width:490px;margin:22px 0 19px;padding:0;list-style:none}
+.temple-history li{display:grid;grid-template-columns:26px 1fr;gap:11px;padding:11px 0;border-top:1px solid rgba(243,233,215,.1)}
+.temple-history li>span{padding-top:2px;color:#d6b67b;font-size:8px;font-weight:700;letter-spacing:.12em}
+.temple-history li p{margin:0;color:#e0d8ca;font-size:10px;line-height:1.7}
+.site-footer{position:relative;isolation:isolate;overflow:hidden}
+.site-footer::before{content:"";position:absolute;z-index:0;inset:0;background:url("assets/madurai-mess-logo.jpg") 82% 50%/min(390px,34vw) auto no-repeat;opacity:.18;mix-blend-mode:screen;pointer-events:none}
+.site-footer>*{position:relative;z-index:1}
+@media(max-width:760px){.temple-story{grid-template-columns:1fr;gap:30px;padding:76px 6vw}.temple-figure img{aspect-ratio:1.28;object-position:35% center}.temple-copy h2{font-size:42px}.temple-history{margin-top:18px}.temple-history li p{font-size:10px}.site-footer::before{background-position:83% center;background-size:min(270px,58vw) auto;opacity:.16}}
+
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .chat-launcher{position:fixed;z-index:30;right:24px;bottom:24px;display:flex;align-items:center;gap:9px;padding:12px 17px;border:1px solid rgba(247,238,223,.18);border-radius:30px;background:#e4773f;color:#21150e;font-size:11px;font-weight:700;box-shadow:0 8px 24px rgba(0,0,0,.32);cursor:pointer;transition:transform .2s,background .2s}
 .chat-launcher:hover{transform:translateY(-2px);background:#ed8c56}.chat-launcher-icon{display:grid;place-items:center;width:20px;height:20px;border:1px solid rgba(33,21,14,.37);border-radius:50%;font-size:11px}
