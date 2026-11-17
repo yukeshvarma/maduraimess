@@ -28,3 +28,21 @@
 .chat-form{display:flex;gap:7px;padding:10px 11px;border-top:1px solid #e0d4be;background:#fffaf0}.chat-form input{min-width:0;flex:1;padding:10px 11px;border:1px solid #ded1b9;border-radius:8px;background:#fff;color:#2f281f;font:inherit;font-size:10px;outline:none}.chat-form input:focus{border-color:#ce754b;box-shadow:0 0 0 2px rgba(206,117,75,.12)}.chat-form>button{width:38px;border:0;border-radius:8px;background:#e4773f;color:#21150e;font-size:18px;font-weight:700;cursor:pointer}.chat-footnote{margin:0;padding:0 12px 10px;background:#fffaf0;color:#93836b;font-size:8px}
 @media(max-width:760px){.chat-launcher{right:14px;bottom:14px;padding:11px 14px}.whatsapp-float{right:151px;bottom:17px;width:38px;height:38px}.whatsapp-float svg{width:23px;height:23px}.chat-panel{right:12px;bottom:68px;max-height:calc(100svh - 84px)}}
 @media print{.chat-launcher,.chat-panel,.whatsapp-float{display:none!important}}
+
+/* Restaurant supplied logo, menu prices and photo-led meals */
+.brand img{width:58px;height:46px;object-fit:contain;filter:brightness(1.8) contrast(1.16);mix-blend-mode:screen}
+.footer-brand img{width:56px;height:43px}
+.chat-brand img{width:52px;height:38px;object-fit:contain;filter:brightness(1.55) contrast(1.1);mix-blend-mode:screen}
+.menu-board-top img{width:86px;height:58px;object-fit:contain;padding:3px;background:#201a14;border-radius:5px;filter:brightness(1.25) contrast(1.08)}
+.price-tag{margin-left:auto;padding:3px 7px;border:1px solid rgba(214,182,123,.4);border-radius:14px;color:#e6bd79;font:600 11px var(--sans);white-space:nowrap}
+.menu-photo-grid{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:0 0 25px}
+.menu-photo{position:relative;aspect-ratio:1.35;margin:0;overflow:hidden;background-image:url('assets/madurai-meals-grid.jpg');background-size:auto 200%;background-repeat:no-repeat}
+.menu-photo:after{content:'';position:absolute;inset:38% 0 0;background:linear-gradient(0deg,rgba(12,10,8,.82),transparent);pointer-events:none}
+.menu-photo-veg{background-position:left top}.menu-photo-nonveg{background-position:right top}.menu-photo-kari{background-position:left bottom}.menu-photo-masal{background-position:right bottom}
+.menu-photo figcaption{position:absolute;z-index:1;right:0;bottom:0;left:0;display:flex;align-items:center;justify-content:space-between;gap:4px;padding:7px 8px;color:#fff;font-size:7px;font-weight:700;letter-spacing:.07em}
+.menu-photo figcaption b{color:#ffd48d;font-size:11px;letter-spacing:0;white-space:nowrap}
+.menu-price{flex:0 0 auto;color:#a54f30;font:600 15px var(--serif);white-space:nowrap}
+.menu-item{align-items:center}
+@media(max-width:760px){.brand img{width:52px;height:42px}.footer-brand img{width:50px;height:39px}.menu-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-bottom:20px}.menu-photo{aspect-ratio:1.5}.menu-photo figcaption{font-size:8px}.menu-photo figcaption b{font-size:12px}.menu-price{font-size:14px}}
+@media(max-width:420px){.price-tag{display:inline-block;margin:5px 0 0 5px;font-size:10px}.dish-title-line{display:block}.dish-title-line span{display:inline-block}.menu-photo-grid{gap:6px}.menu-photo figcaption{padding:6px;font-size:7px}.menu-photo figcaption b{font-size:11px}}
+@media print{.menu-photo-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;margin-bottom:18px;print-color-adjust:exact;-webkit-print-color-adjust:exact}.menu-photo{aspect-ratio:1.5}.menu-photo,.menu-photo:after,.menu-photo figcaption{print-color-adjust:exact;-webkit-print-color-adjust:exact}.menu-photo-grid,.menu-photo{break-inside:avoid}}

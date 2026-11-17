@@ -6,12 +6,11 @@ A responsive static website and printable menu card for Madurai Mess in Madivala
 
 Open index.html in a browser. The menu is available at menu.html; use the Print this menu button to print or save it as a PDF.
 
-## Before publishing
+## Site notes
 
-- Confirm the sample menu items, address pin code, opening hours, and current prices with the restaurant.
-- The menu is labelled as a draft because availability and prices were not provided.
-- The generated food photographs are illustrative. Replace them with actual restaurant photography whenever available.
-- The owner portrait was supplied for this website.
+- Menu items and prices are the values supplied by Madurai Mess; prices are shown in Indian rupees.
+- Food photographs are illustrative, generated menu visuals.
+- The logo artwork and Managing Director portrait were supplied for this website.
 
 ## Publish with GitHub Pages
 
@@ -21,6 +20,6 @@ The workflow in .github/workflows/deploy.yml publishes the site when changes are
 2. Under Build and deployment, choose GitHub Actions as the source.
 3. The first workflow run will deploy the site and provide its public Pages URL.
 
-The site includes a client-side menu assistant. It describes dishes and sends price checks, personal questions, and custom requests to WhatsApp without guessing prices.
+The site includes a client-side menu assistant. It answers dish and price questions from the menu and sends personal or custom questions to WhatsApp.
 
 This project uses plain HTML, CSS and JavaScript; it has no build step.
